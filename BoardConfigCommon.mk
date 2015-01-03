@@ -22,6 +22,8 @@
 # Inherit common omap4 board config
 -include hardware/ti/omap4/BoardConfigCommon.mk
 
+TARGET_SPECIFIC_HEADER_PATH += device/samsung/espresso-common/include
+
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
@@ -151,3 +153,11 @@ TW_EXCLUDE_MTP := true
 
 # Charging mode
 BOARD_CHARGER_RES := device/samsung/espresso-common/res/charger
+
+ifneq ($(filter p3100 p5100,$(TARGET_DEVICE)),)
+# RIL
+BOARD_VENDOR := samsung
+BOARD_PROVIDES_LIBRIL := true
+BOARD_MODEM_TYPE := xmm6260
+BOARD_RIL_CLASS := ../../../device/samsung/espresso-common/ril
+endif
