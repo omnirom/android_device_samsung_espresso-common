@@ -19,7 +19,8 @@
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
 
--include device/samsung/omap4-common/BoardConfigCommon.mk
+# Inherit common omap4 board config
+-include hardware/ti/omap4/BoardConfigCommon.mk
 
 USE_CAMERA_STUB := true
 
