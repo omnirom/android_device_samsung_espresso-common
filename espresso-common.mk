@@ -78,7 +78,8 @@ PRODUCT_PACKAGES += \
     GalaxyTab2Settings \
     lights.piranha \
     libinvensense_mpl \
-    power.piranha
+    power.piranha \
+    libsecril-client
 
 # Charger
 PRODUCT_PACKAGES += \
