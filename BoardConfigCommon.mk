@@ -142,6 +142,11 @@ RECOVERY_FSTAB_VERSION := 2
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/espresso-common/custombootimg.mk
 
 # TWRP
+ifneq ($(filter p3100 p3110,$(TARGET_DEVICE)),)
+TW_THEME := landscape_mdpi
+else
+TW_THEME := landscape_hdpi
+endif
 HAVE_SELINUX := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
