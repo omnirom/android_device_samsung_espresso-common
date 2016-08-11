@@ -17,7 +17,7 @@
 #
 
 # Inherit Omni specific board config
--include device/samsung/espressowifi/BoardConfigOmni.mk
+-include device/samsung/espresso-common/BoardConfigOmni.mk
 
 # Inherit common omap4 board config
 -include hardware/ti/omap4/BoardConfigCommon.mk
@@ -35,7 +35,7 @@ BOARD_NAND_PAGE_SIZE := 4096
 BOARD_NAND_SPARE_SIZE := 128
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_BASE := 0x40000000
-BOARD_KERNEL_CMDLINE :=
+BOARD_KERNEL_CMDLINE := androidboot.hardware=espresso
 
 # External SGX Module
 SGX_MODULES:
