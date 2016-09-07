@@ -4,6 +4,7 @@ $(call inherit-product, device/samsung/espresso-common/device-common.mk)
 PRODUCT_PACKAGES += \
     libsecril-client \
     libsecril-compat \
+    libsecril-shim \
     libsecnativefeature
 
 PRODUCT_PROPERTY_OVERRIDES += \
