@@ -88,7 +88,6 @@ BOARD_SEPOLICY_UNION += \
     domain.te \
     pvrsrvinit.te \
     rild.te \
-    variant_setup.te \
     wpa_supplicant.te
 
 # Recovery
