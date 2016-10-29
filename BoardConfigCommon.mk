@@ -88,7 +88,7 @@ BOARD_SEPOLICY_DIRS += \
     device/samsung/espresso-common/sepolicy
 
 BOARD_SEPOLICY_UNION += \
-    bluetooth.te \
+    cpboot-daemon.te \
     device.te \
     dock_kbd_attach.te \
     domain.te \
@@ -97,14 +97,16 @@ BOARD_SEPOLICY_UNION += \
     geomagneticd.te \
     gpsd.te \
     init.te \
+    mediaserver.te \
     orientationd.te \
+    property.te \
+    property_contexts \
     pvrsrvinit.te \
-    radio.te \
     rild.te \
     smc_pa.te \
-    sysinit.te \
+    system_server.te \
     variant_setup.te \
-    wpa_supplicant.te
+    vold.te
 
 # Recovery
 RECOVERY_FSTAB_VERSION := 2
